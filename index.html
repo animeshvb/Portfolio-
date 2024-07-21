@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd8419959f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/aVB_transparent2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h3>Web Developer</h3>
+            <h1>Hi there! I'm <span>Animesh</span><br> an upcoming Software Engineer</h1>
+        </div>
+    </div>
+</div>
+<!----------about----------->
+<div id="about" class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    A motivated and committed engineering student pursuing a Bachelor's degree 
+                    in Engineering in the field of Computer Science and Technology has a year of practical experience
+                    in object-oriented language and is skilled at using engineering principles to solve challenging problems.
+                    A track record of quickly integrating new techniques and optimizing technical solutions by utilizing
+                    industry best practices and feedback. Adept at managing time and completing cooperative software projects
+                    in group settings.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                        <li><span>WebDev</span><br>Web Development</li>
+                        <li><span>Back-End</span><br>Data Structures</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024-Present</span><br>Logistic Head: Euphony–The Music Society of IIEST Shibpur</li>
+                        <li><span>2024-Present</span><br>Treasurer: Quiz Maniac Beings–The Quizzing Society of IIEST Shibpur</li>
+                        <li><span>2023-2024</span><br>IIEST: Minor and Mini Project under Prof. Sulata Mitra</li>
+                        <li><span>2018-2019</span><br>Discipline Prefect</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2026</span><br>B.Tech CSE at IIEST Shibpur</li>
+                        <li><span>2021-2022</span><br>Class XII - Indian School Sohar</li>
+                        <li><span>2019-2020</span><br>Class X - Indian School Sohar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-col-2">
+            <img src="images/file.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+<!----------services----------->
+<div id="services" class="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the process of creating visually appealing and functional websites 
+                    through the use of layout, color schemes, fonts, and graphics. It involves both the aesthetic
+                    aspects and the user experience, ensuring that websites are accessible and easy to navigate. 
+                    Effective web design balances creativity and usability, resulting in engaging and efficient online interactions.</p>
+                <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Devolopment</h2>
+                    <p>Web development involves building and maintaining websites, focusing on both front-end (client-side) 
+                    and back-end (server-side) programming. It encompasses coding, scripting, and database management to create dynamic,
+                    interactive, and functional web applications. Web developers use various technologies and frameworks to ensure
+                    websites are robust, secure, and scalable.</p>
+                <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-stack-overflow"></i>
+                    <h2>Back-End</h2>
+                    <p>Back-end programming involves creating and managing the server-side logic, databases, 
+                       and application programming interfaces (APIs) that power the functionality of websites and applications. 
+                       It focuses on ensuring data storage, retrieval, and processing work efficiently and securely. 
+                       Back-end developers use languages like Python, Java, and PHP to build scalable and robust server infrastructures.</p>
+                <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+<!---------portfolio------------>
+<div id="portfolio" class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/block-removebg-preview (1).png" width="100%">
+                <div class="layer">
+                    <h3>Website blocker</h3>
+                    <p>Prevents you from going to harmful and spam websites that are suspected to be unsafe.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/currency-convertor-removebg-preview (1).png" width="100%">
+                <div class="layer">
+                    <h3>Currency Convertor</h3>
+                    <p>Real-time conversion of major currencies to all the currencies of the world!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ecom-removebg-preview (1).png" width="100%">
+                <div class="layer">
+                    <h3>e-Commerce Website</h3>
+                    <p>A first-hand lesson to know the works behind what really is Amazon or eBay!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+<!----------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1> 
+               <p><i class="fa-regular fa-paper-plane"></i>contactme@wiki.com</p>
+               <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+               <div class="social-icons">
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your eMail" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>      
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️ 2024. aVB <i class="fa-solid fa-trademark"></i> All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(let tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        document.getElementById(tabname).classList.add("active-tab");
+        event.currentTarget.classList.add("active-link");
+    }
+</script>
+<script>
+
+var sidemenu = document.getElementById("sidemenu")
+
+function openmenu(){
+    document.getElementById("sidemenu").style.right = "0";
+}
+
+function closemenu(){
+    document.getElementById("sidemenu").style.right = "-200px";
+}
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz7D8QS2C6xoJa5fmtGOHceFqEzG4IqOHByk-tQfsSDRlPIn6R_bjEaShFy3LG_tzOLVQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message has been sent!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
